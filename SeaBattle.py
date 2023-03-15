@@ -76,7 +76,7 @@ class Board:
         res = ""
         res += "  | 1 | 2 | 3 | 4 | 5 | 6 |"
         for i, row in enumerate(self.field):
-            res += f"\n{i + 1} | " + " | ".join(row) + " |"
+            res += f"\n{i + 1} | " + " | ".join(map(str, row)) + " |"
 
         if self.hid:
             res = res.replace("■", "0")
